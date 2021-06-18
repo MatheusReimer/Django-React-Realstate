@@ -1,0 +1,315 @@
+.about {
+    overflow:hidden;
+
+    &__main{
+        
+        overflow:hidden;
+        &__background{
+            width: 100%;
+            height: 100vh;
+       
+        }
+        img{
+            
+            width: 100%;
+            height: auto;
+            min-height: 100vh;
+            object-fit: cover;
+        }
+
+        &__over{
+            position:absolute;
+            display: flex;
+            background-color: black;
+            width: 50%;
+            height: 60%;
+            border-radius: 1rem;
+            color: white;
+            top: 40%;
+            left: 25%;
+            
+
+            &__text{
+
+                margin-left: 15%;
+                margin-right: 15%;
+                
+                
+
+                &__title{
+                    margin-top: 10%;
+                    font-size: 3rem;
+                    
+                }
+                &__paragraph{
+                    margin-top: 5%;
+                    font-size: 1.8rem;
+                }
+                &__listContainer{
+                    margin-top: 15%;
+                    
+
+                    display: inline-flex;
+                    justify-content: space-between;
+                    
+
+                }
+                &__list{
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    padding: 10px 60px;
+
+                }
+            }
+        }
+        
+
+    }
+
+    
+  
+        
+    
+
+    &__we{
+        overflow: auto;
+        height: 120vh;
+        background-color: black;
+        
+        
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+      
+
+        &__card{
+            
+          
+            height: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 15%;
+            margin-right: 15%;
+          
+      
+
+            &__first{
+              
+                
+                margin-right: 5%;
+              
+            }
+            &__second{
+          
+                margin-left: 5%;
+             
+               
+            }
+            &__name{
+                font-size: 3rem;
+                font-weight: 200;
+            }
+            &__function{
+                font-size: 2.3rem;
+                color: $color-tertiary;
+                margin-bottom: 2rem;
+                
+            }
+
+            &__description{
+                font-size: 1.8rem;
+            }
+            img{
+                width: auto;
+                height: auto;
+             
+                object-fit: cover;
+            }
+           
+        }
+
+
+            
+       
+        
+
+    }
+    &__we h1{
+        margin-top: 10%;
+        font-size: 3rem;
+        margin-bottom: 5%;
+      
+    }
+    &__we hr{
+        width: 50%;
+        margin-left: 27%;
+    }
+  
+    
+   
+
+
+}
+
+@media (max-width:680px){
+    .about{
+
+    &__main{
+
+        &__over{
+          
+
+            height: auto;
+            border-radius: 1rem;
+           
+            top: 50%;
+    
+           
+            
+
+            &__text{
+
+                margin-left: 3%;
+                margin-right: 3%;
+
+                &__title{
+
+                    font-size: 1.8rem;
+                    
+                }
+                &__paragraph{
+                   
+                    font-size: 1.2rem;
+                }
+                &__listContainer{
+               
+                    
+
+                    display: inline-flex;
+                    justify-content: space-between;
+                    
+                }
+                &__list{
+                    font-size: 1.3rem;
+                    padding-left: 60px;
+                    margin-left: 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__we{
+      
+
+        &__card{
+
+       
+            
+            
+            img{
+                width: 100%;
+            }
+         
+            &__first{
+                
+                
+                
+                margin-right: 0%;
+              
+            }
+            &__second{
+          
+                margin-left: 0%;
+             
+               
+            }
+            &__name{
+                font-size: 2rem;
+                font-weight: 200;
+                margin-right: 5%;
+                
+            }
+            &__function{
+                margin-right: 5%;
+                margin-left:0;
+                font-size: 1.7rem;
+                color: $color-tertiary;
+                margin-bottom: 2rem;
+                
+            }
+
+            &__description{
+                display: flex;
+                font-size: 1.7rem;
+                margin-left:0;
+            }
+           
+        }
+      
+    }
+}
+}
+
+@media (max-width:1280px){
+    .about{
+
+        &__main{
+        &__over{
+            width: 100%;
+            left:0%;
+            height: auto;
+
+        
+        &__text{
+            &__list{
+                padding: 10px 40px;
+                margin-bottom: 30px;
+            }
+        }
+        
+        
+        }}}
+
+
+}
+@media( max-width:1800px){
+
+    .about{
+        &__we{
+            height: auto;
+            padding-bottom: 50px;
+           
+        
+            &__card{
+            
+          
+                height: 80%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-left: 5%;
+                margin-right: 5%;
+        }
+    }
+}
+
+}
+@media( max-width:1440px){
+
+    .about{
+        &__we{
+            &__card{
+            
+          
+                height: 80%;
+                display:table-row;
+                grid-template-columns: 1fr 1fr;
+                margin-left: 5%;
+                margin-right: 5%;
+        }
+     
+    }
+}
+
+}
+
+
